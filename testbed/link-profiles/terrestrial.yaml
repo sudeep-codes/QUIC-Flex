@@ -1,0 +1,4 @@
+delay: 20
+jitter: 2
+loss: 0.01
+bandwidth: 100

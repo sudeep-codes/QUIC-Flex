@@ -1,0 +1,7 @@
+delay: 45
+jitter: 15
+loss: 1.5
+bandwidth: 50
+handover_interval: 15
+handover_loss: 10
+handover_duration: 500

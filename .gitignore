@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.log
+
+# Raw experiment data (large, regenerable — keep out of git, summarize in docs/06-experiment-log.md instead)
+evaluation/logs/*
+!evaluation/logs/.gitkeep
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.pdf
+paper/*.synctex.gz
