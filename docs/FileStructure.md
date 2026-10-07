@@ -5,14 +5,16 @@ This file documents the repo layout so any AI coding agent (Antigravity or other
 ## Full tree
 
 ```
-cn-multipath-quic/
+QUIC-Flex/
 ├── docs/                         # Planning & spec docs — read these before writing code
 │   ├── 01-problem.md             # What we're building, scope, definition of done
 │   ├── 02-architecture.md        # Testbed + transport layer design decisions
 │   ├── 03-algorithm-spec.md      # SOURCE OF TRUTH for the scheduler — scoring fn, hysteresis, edge cases
 │   ├── 04-rules.md               # What's safe to vibe-code vs. needs human review, team ownership
 │   ├── 05-phases.md              # 6-week plan with per-phase deliverables and exit criteria
-│   └── 06-experiment-log.md      # Running log of decisions, results, weight sweeps, pivots
+│   ├── 06-experiment-log.md      # Running log of decisions, results, weight sweeps, pivots
+│   ├── 07-paper-draft.md         # Draft of the paper
+│   └── FileStructure.md          # This file
 │
 ├── testbed/                      # Phase 1 — emulation layer
 │   ├── topology.py               # Mininet/ns-3 two-path topology setup
@@ -29,7 +31,8 @@ cn-multipath-quic/
 │   │   └── stability.py           # RTT variance/jitter
 │   ├── scoring.py                # score(p) = w1*(1/RTT) + w2*(1-loss) + w3*bw - w4*switch
 │   ├── hysteresis.py             # Switch-decision logic + threshold
-│   └── scheduler.py              # Ties signals + scoring + hysteresis together, writes decision log
+│   ├── scheduler.py              # Ties signals + scoring + hysteresis together, writes decision log
+│   └── test_scheduler.py         # Unit tests for the scheduler
 │
 ├── baselines/                    # Phase 3 — comparison schemes, kept separate from our scheduler
 │   ├── single_path.py            # Terrestrial-only and satellite-only baselines
@@ -55,7 +58,8 @@ cn-multipath-quic/
 │   └── figures/                  # Final figures used in the paper (copied from analysis/figures/)
 │
 ├── README.md                     # Entry point — links out to docs/
-├── FileStructure.md              # This file
+├── adaptive-multipath-quic-project.md # Original project proposal
+├── adaptive-multipath-quic-project.md.pdf # PDF of the proposal
 └── .gitignore
 ```
 
