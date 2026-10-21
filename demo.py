@@ -320,7 +320,7 @@ def interactive_menu():
             run_benchmark_matrix()
             generate_and_show_plots(show_gui=True)
         elif choice == '0':
-            print(f"\n{Colors.GREEN}Good luck with your faculty presentation!{Colors.RESET}")
+            print(f"\n{Colors.GREEN}Thank you!!!{Colors.RESET}")
             break
         else:
             print(f"{Colors.RED}Invalid selection. Please choose 0 to 5.{Colors.RESET}\n")
