@@ -11,4 +11,9 @@ Computer Networks team project (3 members). See `docs/01-problem.md` for the ful
 - Experiment log: `docs/06-experiment-log.md`
 
 ## Status
-Phase 1 (testbed) — not yet started.
+- [x] Phase 1 (testbed) — completed. Mininet setup with "terrestrial" and "satellite" links, configurable RTT/loss/bandwidth.
+- [x] Phase 2 (algorithm) — completed. Working scheduler implementation with signal tracking, scoring, hysteresis.
+- [x] Phase 3 (evaluation) — completed. Baselines (single-path, round-robin) and our scheduler compared under identical simulated conditions.
+- [x] Phase 4 (write-up) — completed. Paper-style figures and draft materials ready.
+
+**Result:** The scheduler improves throughput and reduces path switches compared to baselines, especially during handovers. See `paper/` for final figures and experiment summaries.
